@@ -1,0 +1,35 @@
+# Ignore files created by Python itself
+*.pyc
+*.pyo
+__pycache__
+
+# Ignore the virtual environment folder
+my-env/
+
+# Ignore Django's migration files
+*/migrations/
+*.sqlite3
+*.pyc
+
+# Ignore media and static files
+media/
+static/
+
+# Ignore IDE or editor-specific files
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Ignore logs and other generated files
+*.log
+*.csv
+*.xlsx
+
+# Ignore any sensitive or confidential information (customize this as needed)
+*.secret
+*.key
+*.env
+
+# Ignore macOS system files
+.DS_Store

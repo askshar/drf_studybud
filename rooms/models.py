@@ -26,6 +26,7 @@ class Topic(TimeStampModel):
 class Room(TimeStampModel):
     host = models.ForeignKey(User, on_delete=models.CASCADE, related_name="user_rooms")
     topic = models.ForeignKey(Topic, on_delete=models.SET_NULL, null=True, related_name="topic_rooms")
+    participants = models.ManyToManyField(User, related_name='room_participants')
     name = models.CharField(max_length=200)
     description = models.TextField(null=True, blank=True)
 
